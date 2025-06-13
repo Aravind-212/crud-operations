@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURD OPERATION || </title>
+    <link rel="stylesheet" href="./curd.css">
+</head>
+<body>
+    <div class="container">
+        <div class="upper-section" id="upper-section">
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search Data Here" id="inputbox">
+
+            </div>
+            <div class="add" id="add"> Add + </div>
+        </div>
+<!-- table -->
+<div class="table" id="table">
+    <table class="table-format" id="table-format">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th2>
+            <th>AGE</th>
+            <th>PHONE NO.</th>
+            <th>ACTION</th>
+        </tr>
+    </table>
+</div>
+
+<!-- /////////////////////////////  form  /////////////////////////////// -->
+<div class="form" id="form">
+    <div class="close-btn" id="close-btn">X</div>
+    <form action="./php/curd.php" method="post">
+        <input type="text" name="name" id="name" placeholder="Name">
+    <input type="text" name="age" id="age" placeholder="Age">
+    <input type="text" name="phone" id="phone" placeholder="Phone">
+<button>Submit</button>
+    </form>
+</div>
+
+    </div>
+    <script src="./curd.js"></script>
+</body>
+</html>
